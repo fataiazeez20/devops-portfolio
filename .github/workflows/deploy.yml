@@ -22,4 +22,3 @@ steps:
 
   - name: Build Docker image
     run: docker build -t devops-portfolio:latest .
-```
