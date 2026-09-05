@@ -1,0 +1,10 @@
+.git
+.github
+.gitignore
+.dockerignore
+README.md
+
+*.log
+.env
+.env.*
+!.env.example
