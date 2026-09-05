@@ -1,0 +1,25 @@
+name: DevOps Portfolio CI/CD
+
+on:
+push:
+branches:
+- main
+
+jobs:
+build:
+runs-on: ubuntu-latest
+
+```
+steps:
+  - name: Checkout repository
+    uses: actions/checkout@v4
+
+  - name: Run basic tests
+    run: |
+      test -f index.html
+      test -f style.css
+      test -f Dockerfile
+
+  - name: Build Docker image
+    run: docker build -t devops-portfolio:latest .
+```
